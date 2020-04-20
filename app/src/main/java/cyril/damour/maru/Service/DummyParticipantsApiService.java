@@ -7,9 +7,7 @@ import cyril.damour.maru.Model.Participant;
 public class DummyParticipantsApiService implements ParticipantsApiService {
 
         private List<Participant> participant = DummyParticipantsApiService.generateParticipants();
-        /**
-         * {@inheritDoc}
-         */
+
         @Override
         public List<Participant> getParticipant() {
             return participant;

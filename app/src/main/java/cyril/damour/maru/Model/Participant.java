@@ -6,14 +6,8 @@ import java.util.Objects;
     public class Participant {
         private long id;
 
-        /**
-         * Full name
-         */
         private String name;
 
-        /**
-         * Mail
-         */
         private String mail;
 
 
@@ -60,4 +54,3 @@ import java.util.Objects;
         }
     }
 
-}

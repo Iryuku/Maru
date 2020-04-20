@@ -17,8 +17,8 @@ public class DummyParticipantsGenerator {
                 new Participant(6,"Alexandra", "Alexandra.marué@gmail.com")
         );
 
-        public static List<Participant> generateParticipants() {
+        static List<Participant> generateParticipants() {
             return new ArrayList<>(DUMMY_Participants);
         }
     }
-}
+
