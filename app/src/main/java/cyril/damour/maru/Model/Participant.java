@@ -8,13 +8,13 @@ import java.util.Objects;
 
         private String name;
 
-        private String mail;
+        private String email;
 
 
-        public Participant(long id, String name, String getMail) {
+        public Participant(long id, String name, String email) {
             this.id = id;
             this.name = name;
-            this.mail = mail;
+            this.email = email;
         }
         public long getId() {
             return id;
@@ -31,9 +31,9 @@ import java.util.Objects;
         public void setName(String name) {
             this.name = name;
         }
-        public String getMail() {return mail;}
+        public String getEmail() {return email;}
 
-        public void setMail(String mail) {this.mail = mail;}
+        public void setEmail(String email) {this.email = email;}
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
