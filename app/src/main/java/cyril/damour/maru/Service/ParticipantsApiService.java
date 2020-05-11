@@ -1,15 +1,16 @@
 package cyril.damour.maru.Service;
 import java.util.List;
 
-import cyril.damour.maru.Model.Participant;
+import cyril.damour.maru.Model.MeetingRoom;
+
 
 public interface ParticipantsApiService {
 
-        List<Participant> getParticipant();
+        List<MeetingRoom> getMeetingRoom();
 
-        void deleteParticipant(Participant participant);
+        void deleteMeetingRoom(MeetingRoom meetingRoom);
 
-        void createParticipant(Participant participant);
-        Participant getParticipantById(int id);
+        void createMeetingRoom(MeetingRoom meetingRoom);
+        MeetingRoom getMeetingRoomById(int id);
     }
 

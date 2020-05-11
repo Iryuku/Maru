@@ -20,7 +20,10 @@ public class DummyMeetingRoomGenerator {
       new Room (2, "Salle de conférence 2"),
       new Room (3,"Salle de conférence 3")
     );
-    public static List<MeetingRoom>DUMMY_MEETINGROOM=Arrays.asList(
-            new MeetingRoom(1,"29/06/2020","10h00","Budget",1,"Barbara"),
+    public static List<MeetingRoom>DUMMY_MEETING=Arrays.asList(
+            new MeetingRoom(1,"29/06/2020","10h00","Budget",1,DUMMY_PARTICIPANT)
     );
+    static List<MeetingRoom> generateMeetingRoom(){
+        return new ArrayList<>(DUMMY_MEETING);
+    }
 }
