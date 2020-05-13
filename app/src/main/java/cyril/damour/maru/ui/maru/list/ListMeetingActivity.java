@@ -40,9 +40,9 @@ public class ListMeetingActivity extends AppCompatActivity {
 
     }
 
-    @OnClick(R.id.list_reunion_add_btn)
+  /**  @OnClick(R.id.list_reunion_add_btn)
     void addMeeting() {
 
-    }
+    }**/
 }
 
