@@ -1,31 +1,31 @@
 package cyril.damour.maru.Service;
 
-import cyril.damour.maru.Model.MeetingRoom;
+import cyril.damour.maru.Model.Meeting;
 
 import java.util.List;
 
 public class DummyMeetingRoomApiService implements ParticipantsApiService {
 
-    private List<MeetingRoom> meetingRooms = DummyMeetingRoomGenerator.generateMeetingRoom();
+    private List<Meeting> meetingRooms = DummyMeetingRoomGenerator.generateMeetingRoom();
 
 
     @Override
-    public List<MeetingRoom> getMeetingRoom() {
+    public List<Meeting> getMeetingRoom() {
         return meetingRooms;
     }
 
     @Override
-    public void deleteMeetingRoom(MeetingRoom meetingRoom) {meetingRooms.remove(meetingRoom);
+    public void deleteMeetingRoom(Meeting meetingRoom) {meetingRooms.remove(meetingRoom);
 
     }
 
     @Override
-    public void createMeetingRoom(MeetingRoom meetingRoom) {meetingRooms.add(meetingRoom);
+    public void createMeetingRoom(Meeting meetingRoom) {meetingRooms.add(meetingRoom);
 
     }
 
     @Override
-    public MeetingRoom getMeetingRoomById(int id) {
+    public Meeting getMeetingRoomById(int id) {
         return meetingRooms.get(id);
     }
 

@@ -15,14 +15,14 @@ import android.view.ViewGroup;
 import java.util.List;
 
 import cyril.damour.maru.DI.DI;
-import cyril.damour.maru.Model.MeetingRoom;
+import cyril.damour.maru.Model.Meeting;
 import cyril.damour.maru.R;
 import cyril.damour.maru.Service.ParticipantsApiService;
 
 public class MeetingFragment extends Fragment {
 
 private ParticipantsApiService mApiService;
-private List<MeetingRoom> mMeetingRoom;
+private List<Meeting> mMeetingRoom;
 private RecyclerView mRecyclerView;
     @Override
     public void onCreate(Bundle savedInstanceState) {

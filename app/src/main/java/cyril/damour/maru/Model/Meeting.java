@@ -2,7 +2,7 @@ package cyril.damour.maru.Model;
 import java.util.List;
 import java.util.Objects;
 
-public class MeetingRoom {
+public class Meeting {
 private long id;
 private String date;
 private String hourDebut;
@@ -10,7 +10,7 @@ private String subject;
 private long idRoom;
 private List<Participant>participant;
 
-     public MeetingRoom(long id, String date, String hourDebut, String subject, long idRoom, List<Participant>participant) {
+     public Meeting(long id, String date, String hourDebut, String subject, long idRoom, List<Participant>participant) {
     this.id = id;
     this.date= date;
     this.hourDebut= hourDebut;
@@ -19,7 +19,7 @@ private List<Participant>participant;
     this.participant= participant;
 
 }
-    public List<Participant> getParticipant() {
+    public int getParticipant() {
         return participant;
     }
 
@@ -27,7 +27,7 @@ private List<Participant>participant;
         this.participant = participant;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
@@ -69,7 +69,7 @@ private List<Participant>participant;
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        MeetingRoom meetingRoom = (MeetingRoom) o;
+        Meeting meetingRoom = (Meeting) o;
         return Objects.equals(id, meetingRoom.id);
     }
 
