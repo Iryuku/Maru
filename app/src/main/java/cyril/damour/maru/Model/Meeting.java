@@ -19,7 +19,7 @@ private List<Participant>participant;
     this.participant= participant;
 
 }
-    public int getParticipant() {
+    public List<Participant> getParticipant() {
         return participant;
     }
 
@@ -27,7 +27,7 @@ private List<Participant>participant;
         this.participant = participant;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

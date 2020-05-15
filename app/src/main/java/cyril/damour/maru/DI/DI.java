@@ -13,7 +13,7 @@ public class DI {
      * Get an instance on @{@link MeetingRoomApiService}
      * @return
      */
-    public static ParticipantsApiService getNeighbourApiService() {
+    public static ParticipantsApiService getParticipantsApiService() {
         return service;
     }
 

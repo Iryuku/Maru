@@ -9,13 +9,10 @@ import cyril.damour.maru.DI.DI;
 import cyril.damour.maru.R;
 import cyril.damour.maru.Service.ParticipantsApiService;
 
-/**import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;**/
 
 
 public class AddMeetingActivity extends AppCompatActivity {
-@Bindview
+
 private ParticipantsApiService mApiService;
    @Override
     protected void onCreate(Bundle savedInstanceState) {

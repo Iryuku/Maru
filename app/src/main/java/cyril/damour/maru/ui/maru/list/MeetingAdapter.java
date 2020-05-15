@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import cyril.damour.maru.Model.Meeting;
+import cyril.damour.maru.Model.Participant;
 import cyril.damour.maru.R;
 
 import java.util.List;
@@ -48,8 +49,13 @@ public class MeetingAdapter extends RecyclerView.Adapter<MeetingAdapter.MeetingV
     @Override
     public void onBindViewHolder( MeetingViewHolder holder, int position) {
         Meeting meeting = DUMMY_MEETING.get(position);
-        holder.id.setText(meeting.getId());
-        holder.participant.setText(meeting.getParticipant());
+        String emails = "";
+        for(Participant participant : meeting.getParticipant()){
+            emails += " "+participant.getEmail();
+        }
+
+        holder.id.setText(""+meeting.getId());
+        holder.participant.setText(emails);
         holder.subject.setText(meeting.getSubject());
         holder.date.setText(meeting.getDate());
         holder.hourdebut.setText(meeting.getHourDebut());
